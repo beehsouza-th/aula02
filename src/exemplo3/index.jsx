@@ -18,16 +18,16 @@ export default function App() {
   return (
     <>
     <h1>Usuário</h1>
-      <ul>
+    <ul>
           <li>
-          <p>{usuario.name.title}</p>
-            <p>{usuario.name.firts}</p>
-            <p>{usuario.name.last}</p>
-            <p>{usuario.location.street}</p>
-            <p>{usuario.location.number}</p>
-            <p>{usuario.location.name}</p>
+          <p>{usuario?.name.title}</p>
+            <p>{usuario?.name.firts}</p>
+            <p>{usuario?.name.last}</p>
+            <p>usuario?.location.street</p>
+            <p>usuario?.location.number</p>
+            <p>usuario?.location.name</p>
           </li>
-      </ul>
+    </ul>
     </>
   );
 }

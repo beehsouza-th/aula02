@@ -7,19 +7,15 @@ export default function App() {
   useEffect(() => { 
 
     const buscarUsuario  = async () => {
-<<<<<<< HEAD
+
         const resposta = await fetch('https://jsonplaceholder.typicode.com/todos');
-        const dados =await resposta.json();                ;
+        const dados =await resposta.json();                
         setUsuario(dados);
-=======
-                    = await fetch('https://jsonplaceholder.typicode.com/photos');
-        const dados =                ;
-        setFotos(dados);
->>>>>>> 18c815f3d812934700f948d50632a28be1721a3a
     }
+
     buscarUsuario();
   }, []);
-  //complete o código);
+  //complete o código;
 
   return (
     <>
