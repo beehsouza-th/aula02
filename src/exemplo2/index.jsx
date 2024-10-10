@@ -7,9 +7,15 @@ export default function App() {
   useEffect(() => { 
 
     const buscarUsuario  = async () => {
+<<<<<<< HEAD
         const resposta = await fetch('https://jsonplaceholder.typicode.com/todos');
         const dados =await resposta.json();                ;
         setUsuario(dados);
+=======
+                    = await fetch('https://jsonplaceholder.typicode.com/photos');
+        const dados =                ;
+        setFotos(dados);
+>>>>>>> 18c815f3d812934700f948d50632a28be1721a3a
     }
     buscarUsuario();
   }, []);
@@ -17,7 +23,7 @@ export default function App() {
 
   return (
     <>
-      <h1>Usuário</h1>
+      <h1>Galeria de Fotos</h1>
       <ul>
         {buscarUsuario.map(buscarUsuario =>(
           <li key= {buscarUsuario.userId}>
